@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#output{
+    transition: opacity 1s;
+}
+html {
+	font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+    line-height: 1.75;
+	-webkit-text-size-adjust: 100%;
+    background-color: rgba(48,48,51,1);
+    color: rgba(225,223,219,1);
+    display: block;
+}
+</style>
+</head>
+<body>
+
+<p>Sample Constitution Generator</p>
+
+<button onclick="generate()">Generate</button>
+
+<p id="output">Click to start generating.</p>
+
+<script>
+var i = 0;
+const data = [
+"In the Name of God, faith in human rights and obligations. The State shall attend to the Treaty establishing the principle of pluralism, created a new type of political power was subject to the cause of God, faith in Democracy, decree and sanction the following:",
+"In the struggle for independence and develop the state, which embodies the inextinguishable right of every citizen is entitled to live in peace, justice, and brought back the homeland's free will. This revolution is a party, in particular by the Founding Father of the fatherland, with the progressive development of our Eritrean patriots; and standing on the basis of mutual interests, of mutual respect of fundamental human rights and privileges of the Republic of Equatorial Guinea.",
+"In the Name of God, and we disseminated the message of peace and defend this Constitution through representatives we have promulgated contains the amendments that have enriched our unity; Inspired by the supreme position of the Church of Jesus. When the Seal of the rights and freedom, equality and freedom for everyone the lofty values and upon the wisdom of the independence, sovereignty and the laws of the national spirit; guarantee the fundamental principles recognized by the heroism and patriotism of those that fought for over fifty years against imperialist domination, political corruption, the embezzlement of public affairs and the principles of a pluralist society, Desiring to promote the integration of the people of Colombia, In the beginning of the fundamental human rights instruments, Recalling the Basic Principles agreed in a mutual commitment to all good traditions of solidarity among African Peoples, affirm our determination to rise to the African unity conforming to the human being as the Constitution of the same country. Its leader, Saad Zaghloul, and his successor, Mosfata El-Nahhas, walked the path of science, raising the banners of freedom and democracy and they are determined to keep up with the beginning of history, inspired by the realities of our beloved nation; striving for everything that will achieve justice, good and peace for the separation and balance of power through free and secret vote, through a popular referendum, one hundred and eighty-one years ago the rediscovery of this land; And, eventually, regain Afghanistan's appropriate place among the civilized nations of the Chadian people and enabled the bringing of the country. We found Bolivia anew, fulfilling the mandate of our belief that men and women and men, through the long and enduring struggle of the rural world and to any political regime founded on arbitrariness, dictatorship, injustice, corruption, misappropriation of public funds, regionalism, nepotism, confiscation of power, which is the cradle of religions and the said Island of Barbados: And Whereas the Governor and the advent of a modern, prosperous, inclusive, democratic and republican state. The Constitution aspires to be in the heart of Africa, a State of law and one united Nation founded on public freedoms and guarantees for all citizens; Affirming that it is situated, as well as to serve as a model for governance, and on the Fifteenth Day of the pioneers of freedom the people of Estonia, on the principles of a common struggle for national identity based on respect for the development of each State; Reaffirming our inalienable and sacred rights; Affirm our commitment to human rights; Moved by the assembly of the old Eloquent Peasant to the martyrs of the Argentine Nation."
+]
+
+
+function generate(){
+	if (i >= data.length) {
+    	i = 0;
+    }
+    document.getElementById("output").innerHTML = data[i++];    
+}
+
+</script>
+
+</body>
+</html>
